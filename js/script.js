@@ -3,7 +3,7 @@ const username = "hybrid281";
 const repoList = document.querySelector(".repo-list");
 const allRepos = document.querySelector(".repos"); // this is where the repo info appears
 const repoDataAppear = document.querySelector(".repo-data"); // this is where the individ repo data will appear
-const backToGallery = document.querySelector(".view-repos");
+const backToGallery = document.querySelector(".view-repos"); // button to return to list of repos
 const filterInput = document.querySelector(".filter-repos");
 
 
@@ -89,7 +89,6 @@ const displayRepoInfo = function (repoInfo, languages) {
         <a class="visit" href="${repoInfo.html_url}" target="_blank" rel="noreferrer noopener">View Repo on GitHub!</a>
     `;
     repoDataAppear.append(div);
-
 };
 
 backToGallery.addEventListener("click", function() {
